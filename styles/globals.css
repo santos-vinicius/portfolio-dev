@@ -1,0 +1,78 @@
+/* font imports */
+/* ASAP */
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap');
+/* Iconsolata */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+/* Maven Pro*/
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap');
+/* --------------- */
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  --red: #e3646e;
+  --purple: #bb72e9;
+  --blue: #3996db;
+  --green: #82bc4f;
+  --yellow: #eabd5f;
+
+  --gray-100: #0D0E11;
+  --gray-200: #16181d;
+  --gray-300: #292c34;
+  --gray-400: #878ea1;
+  --gray-500: #c0c4ce;
+  --gray-600: #e2e4e9;
+
+  --ff-asap: "Asap", sans-serif;
+  --ff-inconsolata: "Inconsolata", sans-serif;
+  --ff-maven: "Maven Pro", sans-serif;
+
+  --title-lg: 3.5rem;
+  --title-md: 1.5rem;
+  --title-sm: 1rem;
+  --subtitle: 1.25rem;
+  --text-md: 1rem;
+  --text-sm: .875rem; 
+}
+/* -------------- */
+
+html {
+  font: 500 1rem/1.4 var(--ff-maven);
+}
+
+h1, h2, h3 {
+  font-family: var(--ff-asap);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: var(--title-lg);
+}
+
+h2 {
+  font-size: var(--title-md);
+}
+
+h3 {
+  font-size: var(--title-sm);
+}
+
+span[subtitle] {
+  font-size: var(--subtitle);
+  line-height: 1.2;
+  font-family: var(--ff-inconsolata);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
