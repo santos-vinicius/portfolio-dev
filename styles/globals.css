@@ -43,6 +43,7 @@
 
 html {
   font: 500 1rem/1.4 var(--ff-maven);
+  color: var(--gray-600);
 }
 
 h1, h2, h3 {
@@ -75,4 +76,10 @@ a {
 
 ul, li {
   list-style: none;
+}
+
+/* Utils */
+.container { 
+  max-width: 65rem;
+  margin-inline: auto;
 }

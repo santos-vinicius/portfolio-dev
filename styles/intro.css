@@ -1,0 +1,82 @@
+#intro {
+  background: url(../assets/Background_Intro.png) no-repeat center/cover;
+  background-color: var(--gray-300);
+  text-align: center;
+
+  & img[src*="DoubleDown"]{
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+}
+
+.info-content {  
+  padding-block: 5.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & .profile{
+    width: 7rem;
+    position: relative;
+    margin-bottom: 1.5rem;
+
+    & img[src*="profile" ] {
+      border: solid var(--red);
+      border-radius: 50%;
+      padding: .2725rem;
+    }
+
+    & img[src*="code"]{
+      position: absolute;
+      bottom: 5px;
+      right: 5px;
+    }
+  }
+}
+
+
+.description{
+  max-width: 42.5rem;
+  text-align: center;
+
+  & > p {
+    font: 400 var(--subtitle)/1.2 var(--ff-inconsolata);
+    color: var(--gray-500);
+    padding-block: 1rem;
+    & span {
+      color: var(--red);
+    }
+  }
+
+  & p.full-description {
+    font: 400 var(--text-sm)/1.4 var(--ff-maven);
+    color: var(--gray-400);
+    padding-block: 1.25rem;
+  }
+}
+
+.stack-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 1rem;
+
+  & li {
+    display: flex;
+    align-items: center;
+    background-color: var(--gray-300);
+    border-radius: 50px;
+    padding-block: .5rem;
+    padding-inline: 1rem;
+    gap: .5rem;
+
+    font: 400 var(--text-md)/1.4 var(--ff-maven);
+
+    & img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+} 
+
