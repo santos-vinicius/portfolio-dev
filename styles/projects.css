@@ -1,0 +1,44 @@
+#projects {
+  background-color: var(--gray-200);
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+.projects-header {
+  padding-block: 2rem;
+  
+  & p {
+    font: 400 var(--subtitle)/1.2 var(--ff-inconsolata);
+    color: var(--red);
+    padding-block: 1rem;
+  }
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  
+  & article {
+    background-color: var(--gray-300);
+    padding: .75rem;
+    width: 330px;
+    border-radius: 8px;
+    text-align: left;
+
+
+    & > img {
+      border-radius: 12px;
+      width: 306px;
+      margin-bottom: 1.25rem;
+    }
+
+    & p {
+      padding-block: .5rem;
+      font: 400 var(--text-sm)/1.2 var(--ff-maven);
+      color: var(--gray-500);
+
+    }
+  }
+}
+
