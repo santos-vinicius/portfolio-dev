@@ -44,6 +44,8 @@
 html {
   font: 500 1rem/1.4 var(--ff-maven);
   color: var(--gray-600);
+  background-color: var(--gray-200);
+
 }
 
 h1, h2, h3 {
@@ -76,6 +78,11 @@ a {
 
 ul, li {
   list-style: none;
+}
+
+footer {
+  padding-block: 1rem;
+  text-align: center;
 }
 
 /* Utils */
