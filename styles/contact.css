@@ -1,0 +1,57 @@
+#contact {
+  text-align: center;
+  padding-block: 6rem;
+  
+  & .contact-background {
+    background: url(../assets/Background_Contacts.png) no-repeat center/cover;
+  }
+}
+
+.contact-header{
+  margin-bottom: 2.5rem;
+
+  & p {
+    font: 400 var(--subtitle)/1.2 var(--ff-inconsolata);
+    color: var(--purple);
+    margin-bottom: .5rem;
+  }
+
+  & span {
+    font: 400 var(--text-sm)/1.2 var(--ff-maven);
+    color: var(--gray-500);
+  }
+}
+
+.contact-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+
+  & li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--gray-300);
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    height: 68px;
+    padding: 1.25rem;
+    cursor: pointer;
+  
+    & div {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+    }
+
+    & img[src*="Arrow"]{
+      width: 1.56rem;
+    }
+  }
+
+}
